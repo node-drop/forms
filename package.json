@@ -1,5 +1,5 @@
 {
-  "name": "@node-drop/forms",
+  "name": "forms",
   "version": "1.0.0",
   "description": "Form Generator Node - Build custom forms visually and trigger workflows on submission",
   "main": "index.js",

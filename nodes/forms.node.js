@@ -6,6 +6,20 @@ const FormGeneratorNode = {
   version: 1,
   description:
     "Generate and display interactive forms - Build custom forms visually and trigger workflows on submission",
+  ai: {
+    description: "Generate and display interactive forms - Build custom forms visually and trigger workflows on submission.",
+    useCases: [
+      "Collect user feedback",
+      "Survey",
+      "Waitlist signup"
+    ],
+    tags: ["form", "input", "ui", "trigger"],
+    rules: [
+      "Set Form Title",
+      "Define Fields"
+    ],
+    complexityScore: 2
+  },
   icon: "fa:wpforms",
   color: "#10b981",
   executionCapability: "trigger",
@@ -309,6 +323,15 @@ const FormGeneratorNode = {
       componentProps: {
         dependsOn: ["formUrl"],
       },
+    },
+    {
+      displayName: "Options",
+      name: "options",
+      type: "collection",
+      placeholder: "Add Option",
+      default: {},
+      tooltip: "Additional form configuration options",
+      options: require("../../../src/config/webhookOptions").getWebhookOptions('form'),
     },
   ],
 

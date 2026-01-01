@@ -15,7 +15,7 @@
   ],
   "scripts": {},
   "nodes": [
-    "nodes/form-generator.node.js"
+    "nodes/forms.node.js"
   ],
   "dependencies": {},
   "engines": {
